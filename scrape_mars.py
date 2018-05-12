@@ -6,6 +6,17 @@ import shutil
 from IPython.display import Image
 import pandas as pd
 import time
+import pymongo
+import json
+
+# Initialize PyMongo to work with MongoDBs
+conn = 'mongodb://localhost:27017'
+client = pymongo.MongoClient(conn)
+
+# Define database and collection
+db = client.Mars
+collection = db.Mars
+
 
 def init_browser():    
 		executable_path = {'executable_path': 'chromedriver.exe'}
@@ -107,4 +118,8 @@ def scrape():
 		# Return the dictionary
 		return mars_data
 
+# Dictionary to be inserted as a MongoDB document
+post = {scrape}
+
+collection.insert_one(post)
 
