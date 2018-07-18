@@ -1,3 +1,8 @@
+[![built with D3](https://img.shields.io/badge/built%20with-D3-yellow.svg)]
+[![built with HTML5](https://img.shields.io/badge/built%20with-HTML5-yellowgreen.svg)]
+[![built with Python3](https://img.shields.io/badge/built%20with-Python3-red.svg)]
+[![built with Flask](https://img.shields.io/badge/built%20with-Flask-orange.svg)]
+
 # Web-Scraping-and-Document-Databases
 
 # Mission to Mars
